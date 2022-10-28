@@ -1,0 +1,1925 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "125000003"
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "gth_unit_vio_0_inst",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "A7D9D3C1C08757E0AADF6617A43C318D",
+                        "pins": [
+                            {
+                                "name": "probe_in0",
+                                "id": 0,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "ila_tx_1",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "ila_tx_1[166]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in1",
+                                "id": 1,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "link_down_latched_out_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in2",
+                                "id": 2,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "init_done_int",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in3",
+                                "id": 3,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "init_retry_ctr_int",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "init_retry_ctr_int[3]"
+                                            },
+                                            {
+                                                "name": "init_retry_ctr_int[2]"
+                                            },
+                                            {
+                                                "name": "init_retry_ctr_int[1]"
+                                            },
+                                            {
+                                                "name": "init_retry_ctr_int[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in4",
+                                "id": 4,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "gtpowergood_vio_sync",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in5",
+                                "id": 5,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "txprgdivresetdone_vio_sync",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in6",
+                                "id": 6,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "rxprgdivresetdone_vio_sync",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in7",
+                                "id": 7,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "txpmaresetdone_vio_sync",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in8",
+                                "id": 8,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "rxpmaresetdone_vio_sync",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in9",
+                                "id": 9,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "gtwiz_reset_tx_done_vio_sync",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in10",
+                                "id": 10,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "gtwiz_reset_rx_done_vio_sync",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out0",
+                                "id": 11,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "hb_gtwiz_reset_all_vio_int",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
+                                "id": 12,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "hb0_gtwiz_reset_tx_pll_and_datapath_int",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out2",
+                                "id": 13,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "hb0_gtwiz_reset_tx_datapath_int",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out3",
+                                "id": 14,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "hb_gtwiz_reset_rx_pll_and_datapath_vio_int",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out4",
+                                "id": 15,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "hb_gtwiz_reset_rx_datapath_vio_int",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out5",
+                                "id": 16,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "link_down_latched_reset_vio_int",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "ila_optics_rx",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "2FD29630280F5958B4D53856626A4445",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 17,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 255,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "ila_rx",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "ila_rx[255]"
+                                            },
+                                            {
+                                                "name": "ila_rx[254]"
+                                            },
+                                            {
+                                                "name": "ila_rx[253]"
+                                            },
+                                            {
+                                                "name": "ila_rx[252]"
+                                            },
+                                            {
+                                                "name": "ila_rx[251]"
+                                            },
+                                            {
+                                                "name": "ila_rx[250]"
+                                            },
+                                            {
+                                                "name": "ila_rx[249]"
+                                            },
+                                            {
+                                                "name": "ila_rx[248]"
+                                            },
+                                            {
+                                                "name": "ila_rx[247]"
+                                            },
+                                            {
+                                                "name": "ila_rx[246]"
+                                            },
+                                            {
+                                                "name": "ila_rx[245]"
+                                            },
+                                            {
+                                                "name": "ila_rx[244]"
+                                            },
+                                            {
+                                                "name": "ila_rx[243]"
+                                            },
+                                            {
+                                                "name": "ila_rx[242]"
+                                            },
+                                            {
+                                                "name": "ila_rx[241]"
+                                            },
+                                            {
+                                                "name": "ila_rx[240]"
+                                            },
+                                            {
+                                                "name": "ila_rx[239]"
+                                            },
+                                            {
+                                                "name": "ila_rx[238]"
+                                            },
+                                            {
+                                                "name": "ila_rx[237]"
+                                            },
+                                            {
+                                                "name": "ila_rx[236]"
+                                            },
+                                            {
+                                                "name": "ila_rx[235]"
+                                            },
+                                            {
+                                                "name": "ila_rx[234]"
+                                            },
+                                            {
+                                                "name": "ila_rx[233]"
+                                            },
+                                            {
+                                                "name": "ila_rx[232]"
+                                            },
+                                            {
+                                                "name": "ila_rx[231]"
+                                            },
+                                            {
+                                                "name": "ila_rx[230]"
+                                            },
+                                            {
+                                                "name": "ila_rx[229]"
+                                            },
+                                            {
+                                                "name": "ila_rx[228]"
+                                            },
+                                            {
+                                                "name": "ila_rx[227]"
+                                            },
+                                            {
+                                                "name": "ila_rx[226]"
+                                            },
+                                            {
+                                                "name": "ila_rx[225]"
+                                            },
+                                            {
+                                                "name": "ila_rx[224]"
+                                            },
+                                            {
+                                                "name": "ila_rx[223]"
+                                            },
+                                            {
+                                                "name": "ila_rx[222]"
+                                            },
+                                            {
+                                                "name": "ila_rx[221]"
+                                            },
+                                            {
+                                                "name": "ila_rx[220]"
+                                            },
+                                            {
+                                                "name": "ila_rx[219]"
+                                            },
+                                            {
+                                                "name": "ila_rx[218]"
+                                            },
+                                            {
+                                                "name": "ila_rx[217]"
+                                            },
+                                            {
+                                                "name": "ila_rx[216]"
+                                            },
+                                            {
+                                                "name": "ila_rx[215]"
+                                            },
+                                            {
+                                                "name": "ila_rx[214]"
+                                            },
+                                            {
+                                                "name": "ila_rx[213]"
+                                            },
+                                            {
+                                                "name": "ila_rx[212]"
+                                            },
+                                            {
+                                                "name": "ila_rx[211]"
+                                            },
+                                            {
+                                                "name": "ila_rx[210]"
+                                            },
+                                            {
+                                                "name": "ila_rx[209]"
+                                            },
+                                            {
+                                                "name": "ila_rx[208]"
+                                            },
+                                            {
+                                                "name": "ila_rx[207]"
+                                            },
+                                            {
+                                                "name": "ila_rx[206]"
+                                            },
+                                            {
+                                                "name": "ila_rx[205]"
+                                            },
+                                            {
+                                                "name": "ila_rx[204]"
+                                            },
+                                            {
+                                                "name": "ila_rx[203]"
+                                            },
+                                            {
+                                                "name": "ila_rx[202]"
+                                            },
+                                            {
+                                                "name": "ila_rx[201]"
+                                            },
+                                            {
+                                                "name": "ila_rx[200]"
+                                            },
+                                            {
+                                                "name": "ila_rx[199]"
+                                            },
+                                            {
+                                                "name": "ila_rx[198]"
+                                            },
+                                            {
+                                                "name": "ila_rx[197]"
+                                            },
+                                            {
+                                                "name": "ila_rx[196]"
+                                            },
+                                            {
+                                                "name": "ila_rx[195]"
+                                            },
+                                            {
+                                                "name": "ila_rx[194]"
+                                            },
+                                            {
+                                                "name": "ila_rx[193]"
+                                            },
+                                            {
+                                                "name": "ila_rx[192]"
+                                            },
+                                            {
+                                                "name": "ila_rx[191]"
+                                            },
+                                            {
+                                                "name": "ila_rx[190]"
+                                            },
+                                            {
+                                                "name": "ila_rx[189]"
+                                            },
+                                            {
+                                                "name": "ila_rx[188]"
+                                            },
+                                            {
+                                                "name": "ila_rx[187]"
+                                            },
+                                            {
+                                                "name": "ila_rx[186]"
+                                            },
+                                            {
+                                                "name": "ila_rx[185]"
+                                            },
+                                            {
+                                                "name": "ila_rx[184]"
+                                            },
+                                            {
+                                                "name": "ila_rx[183]"
+                                            },
+                                            {
+                                                "name": "ila_rx[182]"
+                                            },
+                                            {
+                                                "name": "ila_rx[181]"
+                                            },
+                                            {
+                                                "name": "ila_rx[180]"
+                                            },
+                                            {
+                                                "name": "ila_rx[179]"
+                                            },
+                                            {
+                                                "name": "ila_rx[178]"
+                                            },
+                                            {
+                                                "name": "ila_rx[177]"
+                                            },
+                                            {
+                                                "name": "ila_rx[176]"
+                                            },
+                                            {
+                                                "name": "ila_rx[175]"
+                                            },
+                                            {
+                                                "name": "ila_rx[174]"
+                                            },
+                                            {
+                                                "name": "ila_rx[173]"
+                                            },
+                                            {
+                                                "name": "ila_rx[172]"
+                                            },
+                                            {
+                                                "name": "ila_rx[171]"
+                                            },
+                                            {
+                                                "name": "ila_rx[170]"
+                                            },
+                                            {
+                                                "name": "ila_rx[169]"
+                                            },
+                                            {
+                                                "name": "ila_rx[168]"
+                                            },
+                                            {
+                                                "name": "ila_rx[167]"
+                                            },
+                                            {
+                                                "name": "ila_rx[166]"
+                                            },
+                                            {
+                                                "name": "ila_rx[165]"
+                                            },
+                                            {
+                                                "name": "ila_rx[164]"
+                                            },
+                                            {
+                                                "name": "ila_rx[163]"
+                                            },
+                                            {
+                                                "name": "ila_rx[162]"
+                                            },
+                                            {
+                                                "name": "ila_rx[161]"
+                                            },
+                                            {
+                                                "name": "ila_rx[160]"
+                                            },
+                                            {
+                                                "name": "ila_rx[159]"
+                                            },
+                                            {
+                                                "name": "ila_rx[158]"
+                                            },
+                                            {
+                                                "name": "ila_rx[157]"
+                                            },
+                                            {
+                                                "name": "ila_rx[156]"
+                                            },
+                                            {
+                                                "name": "ila_rx[155]"
+                                            },
+                                            {
+                                                "name": "ila_rx[154]"
+                                            },
+                                            {
+                                                "name": "ila_rx[153]"
+                                            },
+                                            {
+                                                "name": "ila_rx[152]"
+                                            },
+                                            {
+                                                "name": "ila_rx[151]"
+                                            },
+                                            {
+                                                "name": "ila_rx[150]"
+                                            },
+                                            {
+                                                "name": "ila_rx[149]"
+                                            },
+                                            {
+                                                "name": "ila_rx[148]"
+                                            },
+                                            {
+                                                "name": "ila_rx[147]"
+                                            },
+                                            {
+                                                "name": "ila_rx[146]"
+                                            },
+                                            {
+                                                "name": "ila_rx[145]"
+                                            },
+                                            {
+                                                "name": "ila_rx[144]"
+                                            },
+                                            {
+                                                "name": "ila_rx[143]"
+                                            },
+                                            {
+                                                "name": "ila_rx[142]"
+                                            },
+                                            {
+                                                "name": "ila_rx[141]"
+                                            },
+                                            {
+                                                "name": "ila_rx[140]"
+                                            },
+                                            {
+                                                "name": "ila_rx[139]"
+                                            },
+                                            {
+                                                "name": "ila_rx[138]"
+                                            },
+                                            {
+                                                "name": "ila_rx[137]"
+                                            },
+                                            {
+                                                "name": "ila_rx[136]"
+                                            },
+                                            {
+                                                "name": "ila_rx[135]"
+                                            },
+                                            {
+                                                "name": "ila_rx[134]"
+                                            },
+                                            {
+                                                "name": "ila_rx[133]"
+                                            },
+                                            {
+                                                "name": "ila_rx[132]"
+                                            },
+                                            {
+                                                "name": "ila_rx[131]"
+                                            },
+                                            {
+                                                "name": "ila_rx[130]"
+                                            },
+                                            {
+                                                "name": "ila_rx[129]"
+                                            },
+                                            {
+                                                "name": "ila_rx[128]"
+                                            },
+                                            {
+                                                "name": "ila_rx[127]"
+                                            },
+                                            {
+                                                "name": "ila_rx[126]"
+                                            },
+                                            {
+                                                "name": "ila_rx[125]"
+                                            },
+                                            {
+                                                "name": "ila_rx[124]"
+                                            },
+                                            {
+                                                "name": "ila_rx[123]"
+                                            },
+                                            {
+                                                "name": "ila_rx[122]"
+                                            },
+                                            {
+                                                "name": "ila_rx[121]"
+                                            },
+                                            {
+                                                "name": "ila_rx[120]"
+                                            },
+                                            {
+                                                "name": "ila_rx[119]"
+                                            },
+                                            {
+                                                "name": "ila_rx[118]"
+                                            },
+                                            {
+                                                "name": "ila_rx[117]"
+                                            },
+                                            {
+                                                "name": "ila_rx[116]"
+                                            },
+                                            {
+                                                "name": "ila_rx[115]"
+                                            },
+                                            {
+                                                "name": "ila_rx[114]"
+                                            },
+                                            {
+                                                "name": "ila_rx[113]"
+                                            },
+                                            {
+                                                "name": "ila_rx[112]"
+                                            },
+                                            {
+                                                "name": "ila_rx[111]"
+                                            },
+                                            {
+                                                "name": "ila_rx[110]"
+                                            },
+                                            {
+                                                "name": "ila_rx[109]"
+                                            },
+                                            {
+                                                "name": "ila_rx[108]"
+                                            },
+                                            {
+                                                "name": "ila_rx[107]"
+                                            },
+                                            {
+                                                "name": "ila_rx[106]"
+                                            },
+                                            {
+                                                "name": "ila_rx[105]"
+                                            },
+                                            {
+                                                "name": "ila_rx[104]"
+                                            },
+                                            {
+                                                "name": "ila_rx[103]"
+                                            },
+                                            {
+                                                "name": "ila_rx[102]"
+                                            },
+                                            {
+                                                "name": "ila_rx[101]"
+                                            },
+                                            {
+                                                "name": "ila_rx[100]"
+                                            },
+                                            {
+                                                "name": "ila_rx[99]"
+                                            },
+                                            {
+                                                "name": "ila_rx[98]"
+                                            },
+                                            {
+                                                "name": "ila_rx[97]"
+                                            },
+                                            {
+                                                "name": "ila_rx[96]"
+                                            },
+                                            {
+                                                "name": "ila_rx[95]"
+                                            },
+                                            {
+                                                "name": "ila_rx[94]"
+                                            },
+                                            {
+                                                "name": "ila_rx[93]"
+                                            },
+                                            {
+                                                "name": "ila_rx[92]"
+                                            },
+                                            {
+                                                "name": "ila_rx[91]"
+                                            },
+                                            {
+                                                "name": "ila_rx[90]"
+                                            },
+                                            {
+                                                "name": "ila_rx[89]"
+                                            },
+                                            {
+                                                "name": "ila_rx[88]"
+                                            },
+                                            {
+                                                "name": "ila_rx[87]"
+                                            },
+                                            {
+                                                "name": "ila_rx[86]"
+                                            },
+                                            {
+                                                "name": "ila_rx[85]"
+                                            },
+                                            {
+                                                "name": "ila_rx[84]"
+                                            },
+                                            {
+                                                "name": "ila_rx[83]"
+                                            },
+                                            {
+                                                "name": "ila_rx[82]"
+                                            },
+                                            {
+                                                "name": "ila_rx[81]"
+                                            },
+                                            {
+                                                "name": "ila_rx[80]"
+                                            },
+                                            {
+                                                "name": "ila_rx[79]"
+                                            },
+                                            {
+                                                "name": "ila_rx[78]"
+                                            },
+                                            {
+                                                "name": "ila_rx[77]"
+                                            },
+                                            {
+                                                "name": "ila_rx[76]"
+                                            },
+                                            {
+                                                "name": "ila_rx[75]"
+                                            },
+                                            {
+                                                "name": "ila_rx[74]"
+                                            },
+                                            {
+                                                "name": "ila_rx[73]"
+                                            },
+                                            {
+                                                "name": "ila_rx[72]"
+                                            },
+                                            {
+                                                "name": "ila_rx[71]"
+                                            },
+                                            {
+                                                "name": "ila_rx[70]"
+                                            },
+                                            {
+                                                "name": "ila_rx[69]"
+                                            },
+                                            {
+                                                "name": "ila_rx[68]"
+                                            },
+                                            {
+                                                "name": "ila_rx[67]"
+                                            },
+                                            {
+                                                "name": "ila_rx[66]"
+                                            },
+                                            {
+                                                "name": "ila_rx[65]"
+                                            },
+                                            {
+                                                "name": "ila_rx[64]"
+                                            },
+                                            {
+                                                "name": "ila_rx[63]"
+                                            },
+                                            {
+                                                "name": "ila_rx[62]"
+                                            },
+                                            {
+                                                "name": "ila_rx[61]"
+                                            },
+                                            {
+                                                "name": "ila_rx[60]"
+                                            },
+                                            {
+                                                "name": "ila_rx[59]"
+                                            },
+                                            {
+                                                "name": "ila_rx[58]"
+                                            },
+                                            {
+                                                "name": "ila_rx[57]"
+                                            },
+                                            {
+                                                "name": "ila_rx[56]"
+                                            },
+                                            {
+                                                "name": "ila_rx[55]"
+                                            },
+                                            {
+                                                "name": "ila_rx[54]"
+                                            },
+                                            {
+                                                "name": "ila_rx[53]"
+                                            },
+                                            {
+                                                "name": "ila_rx[52]"
+                                            },
+                                            {
+                                                "name": "ila_rx[51]"
+                                            },
+                                            {
+                                                "name": "ila_rx[50]"
+                                            },
+                                            {
+                                                "name": "ila_rx[49]"
+                                            },
+                                            {
+                                                "name": "ila_rx[48]"
+                                            },
+                                            {
+                                                "name": "ila_rx[47]"
+                                            },
+                                            {
+                                                "name": "ila_rx[46]"
+                                            },
+                                            {
+                                                "name": "ila_rx[45]"
+                                            },
+                                            {
+                                                "name": "ila_rx[44]"
+                                            },
+                                            {
+                                                "name": "ila_rx[43]"
+                                            },
+                                            {
+                                                "name": "ila_rx[42]"
+                                            },
+                                            {
+                                                "name": "ila_rx[41]"
+                                            },
+                                            {
+                                                "name": "ila_rx[40]"
+                                            },
+                                            {
+                                                "name": "ila_rx[39]"
+                                            },
+                                            {
+                                                "name": "ila_rx[38]"
+                                            },
+                                            {
+                                                "name": "ila_rx[37]"
+                                            },
+                                            {
+                                                "name": "ila_rx[36]"
+                                            },
+                                            {
+                                                "name": "ila_rx[35]"
+                                            },
+                                            {
+                                                "name": "ila_rx[34]"
+                                            },
+                                            {
+                                                "name": "ila_rx[33]"
+                                            },
+                                            {
+                                                "name": "ila_rx[32]"
+                                            },
+                                            {
+                                                "name": "ila_rx[31]"
+                                            },
+                                            {
+                                                "name": "ila_rx[30]"
+                                            },
+                                            {
+                                                "name": "ila_rx[29]"
+                                            },
+                                            {
+                                                "name": "ila_rx[28]"
+                                            },
+                                            {
+                                                "name": "ila_rx[27]"
+                                            },
+                                            {
+                                                "name": "ila_rx[26]"
+                                            },
+                                            {
+                                                "name": "ila_rx[25]"
+                                            },
+                                            {
+                                                "name": "ila_rx[24]"
+                                            },
+                                            {
+                                                "name": "ila_rx[23]"
+                                            },
+                                            {
+                                                "name": "ila_rx[22]"
+                                            },
+                                            {
+                                                "name": "ila_rx[21]"
+                                            },
+                                            {
+                                                "name": "ila_rx[20]"
+                                            },
+                                            {
+                                                "name": "ila_rx[19]"
+                                            },
+                                            {
+                                                "name": "ila_rx[18]"
+                                            },
+                                            {
+                                                "name": "ila_rx[17]"
+                                            },
+                                            {
+                                                "name": "ila_rx[16]"
+                                            },
+                                            {
+                                                "name": "ila_rx[15]"
+                                            },
+                                            {
+                                                "name": "ila_rx[14]"
+                                            },
+                                            {
+                                                "name": "ila_rx[13]"
+                                            },
+                                            {
+                                                "name": "ila_rx[12]"
+                                            },
+                                            {
+                                                "name": "ila_rx[11]"
+                                            },
+                                            {
+                                                "name": "ila_rx[10]"
+                                            },
+                                            {
+                                                "name": "ila_rx[9]"
+                                            },
+                                            {
+                                                "name": "ila_rx[8]"
+                                            },
+                                            {
+                                                "name": "ila_rx[7]"
+                                            },
+                                            {
+                                                "name": "ila_rx[6]"
+                                            },
+                                            {
+                                                "name": "ila_rx[5]"
+                                            },
+                                            {
+                                                "name": "ila_rx[4]"
+                                            },
+                                            {
+                                                "name": "ila_rx[3]"
+                                            },
+                                            {
+                                                "name": "ila_rx[2]"
+                                            },
+                                            {
+                                                "name": "ila_rx[1]"
+                                            },
+                                            {
+                                                "name": "ila_rx[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "ila_optics_tx",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 2,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "1CC0BC104FA4557B8C65B7F736EC95C4",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 18,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 255,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "ila_tx",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "ila_tx[255]"
+                                            },
+                                            {
+                                                "name": "ila_tx[254]"
+                                            },
+                                            {
+                                                "name": "ila_tx[253]"
+                                            },
+                                            {
+                                                "name": "ila_tx[252]"
+                                            },
+                                            {
+                                                "name": "ila_tx[251]"
+                                            },
+                                            {
+                                                "name": "ila_tx[250]"
+                                            },
+                                            {
+                                                "name": "ila_tx[249]"
+                                            },
+                                            {
+                                                "name": "ila_tx[248]"
+                                            },
+                                            {
+                                                "name": "ila_tx[247]"
+                                            },
+                                            {
+                                                "name": "ila_tx[246]"
+                                            },
+                                            {
+                                                "name": "ila_tx[245]"
+                                            },
+                                            {
+                                                "name": "ila_tx[244]"
+                                            },
+                                            {
+                                                "name": "ila_tx[243]"
+                                            },
+                                            {
+                                                "name": "ila_tx[242]"
+                                            },
+                                            {
+                                                "name": "ila_tx[241]"
+                                            },
+                                            {
+                                                "name": "ila_tx[240]"
+                                            },
+                                            {
+                                                "name": "ila_tx[239]"
+                                            },
+                                            {
+                                                "name": "ila_tx[238]"
+                                            },
+                                            {
+                                                "name": "ila_tx[237]"
+                                            },
+                                            {
+                                                "name": "ila_tx[236]"
+                                            },
+                                            {
+                                                "name": "ila_tx[235]"
+                                            },
+                                            {
+                                                "name": "ila_tx[234]"
+                                            },
+                                            {
+                                                "name": "ila_tx[233]"
+                                            },
+                                            {
+                                                "name": "ila_tx[232]"
+                                            },
+                                            {
+                                                "name": "ila_tx[231]"
+                                            },
+                                            {
+                                                "name": "ila_tx[230]"
+                                            },
+                                            {
+                                                "name": "ila_tx[229]"
+                                            },
+                                            {
+                                                "name": "ila_tx[228]"
+                                            },
+                                            {
+                                                "name": "ila_tx[227]"
+                                            },
+                                            {
+                                                "name": "ila_tx[226]"
+                                            },
+                                            {
+                                                "name": "ila_tx[225]"
+                                            },
+                                            {
+                                                "name": "ila_tx[224]"
+                                            },
+                                            {
+                                                "name": "ila_tx[223]"
+                                            },
+                                            {
+                                                "name": "ila_tx[222]"
+                                            },
+                                            {
+                                                "name": "ila_tx[221]"
+                                            },
+                                            {
+                                                "name": "ila_tx[220]"
+                                            },
+                                            {
+                                                "name": "ila_tx[219]"
+                                            },
+                                            {
+                                                "name": "ila_tx[218]"
+                                            },
+                                            {
+                                                "name": "ila_tx[217]"
+                                            },
+                                            {
+                                                "name": "ila_tx[216]"
+                                            },
+                                            {
+                                                "name": "ila_tx[215]"
+                                            },
+                                            {
+                                                "name": "ila_tx[214]"
+                                            },
+                                            {
+                                                "name": "ila_tx[213]"
+                                            },
+                                            {
+                                                "name": "ila_tx[212]"
+                                            },
+                                            {
+                                                "name": "ila_tx[211]"
+                                            },
+                                            {
+                                                "name": "ila_tx[210]"
+                                            },
+                                            {
+                                                "name": "ila_tx[209]"
+                                            },
+                                            {
+                                                "name": "ila_tx[208]"
+                                            },
+                                            {
+                                                "name": "ila_tx[207]"
+                                            },
+                                            {
+                                                "name": "ila_tx[206]"
+                                            },
+                                            {
+                                                "name": "ila_tx[205]"
+                                            },
+                                            {
+                                                "name": "ila_tx[204]"
+                                            },
+                                            {
+                                                "name": "ila_tx[203]"
+                                            },
+                                            {
+                                                "name": "ila_tx[202]"
+                                            },
+                                            {
+                                                "name": "ila_tx[201]"
+                                            },
+                                            {
+                                                "name": "ila_tx[200]"
+                                            },
+                                            {
+                                                "name": "ila_tx[199]"
+                                            },
+                                            {
+                                                "name": "ila_tx[198]"
+                                            },
+                                            {
+                                                "name": "ila_tx[197]"
+                                            },
+                                            {
+                                                "name": "ila_tx[196]"
+                                            },
+                                            {
+                                                "name": "ila_tx[195]"
+                                            },
+                                            {
+                                                "name": "ila_tx[194]"
+                                            },
+                                            {
+                                                "name": "ila_tx[193]"
+                                            },
+                                            {
+                                                "name": "ila_tx[192]"
+                                            },
+                                            {
+                                                "name": "ila_tx[191]"
+                                            },
+                                            {
+                                                "name": "ila_tx[190]"
+                                            },
+                                            {
+                                                "name": "ila_tx[189]"
+                                            },
+                                            {
+                                                "name": "ila_tx[188]"
+                                            },
+                                            {
+                                                "name": "ila_tx[187]"
+                                            },
+                                            {
+                                                "name": "ila_tx[186]"
+                                            },
+                                            {
+                                                "name": "ila_tx[185]"
+                                            },
+                                            {
+                                                "name": "ila_tx[184]"
+                                            },
+                                            {
+                                                "name": "ila_tx[183]"
+                                            },
+                                            {
+                                                "name": "ila_tx[182]"
+                                            },
+                                            {
+                                                "name": "ila_tx[181]"
+                                            },
+                                            {
+                                                "name": "ila_tx[180]"
+                                            },
+                                            {
+                                                "name": "ila_tx[179]"
+                                            },
+                                            {
+                                                "name": "ila_tx[178]"
+                                            },
+                                            {
+                                                "name": "ila_tx[177]"
+                                            },
+                                            {
+                                                "name": "ila_tx[176]"
+                                            },
+                                            {
+                                                "name": "ila_tx[175]"
+                                            },
+                                            {
+                                                "name": "ila_tx[174]"
+                                            },
+                                            {
+                                                "name": "ila_tx[173]"
+                                            },
+                                            {
+                                                "name": "ila_tx[172]"
+                                            },
+                                            {
+                                                "name": "ila_tx[171]"
+                                            },
+                                            {
+                                                "name": "ila_tx[170]"
+                                            },
+                                            {
+                                                "name": "ila_tx[169]"
+                                            },
+                                            {
+                                                "name": "ila_tx[168]"
+                                            },
+                                            {
+                                                "name": "ila_tx[167]"
+                                            },
+                                            {
+                                                "name": "ila_tx[166]"
+                                            },
+                                            {
+                                                "name": "ila_tx[165]"
+                                            },
+                                            {
+                                                "name": "ila_tx[164]"
+                                            },
+                                            {
+                                                "name": "ila_tx[163]"
+                                            },
+                                            {
+                                                "name": "ila_tx[162]"
+                                            },
+                                            {
+                                                "name": "ila_tx[161]"
+                                            },
+                                            {
+                                                "name": "ila_tx[160]"
+                                            },
+                                            {
+                                                "name": "ila_tx[159]"
+                                            },
+                                            {
+                                                "name": "ila_tx[158]"
+                                            },
+                                            {
+                                                "name": "ila_tx[157]"
+                                            },
+                                            {
+                                                "name": "ila_tx[156]"
+                                            },
+                                            {
+                                                "name": "ila_tx[155]"
+                                            },
+                                            {
+                                                "name": "ila_tx[154]"
+                                            },
+                                            {
+                                                "name": "ila_tx[153]"
+                                            },
+                                            {
+                                                "name": "ila_tx[152]"
+                                            },
+                                            {
+                                                "name": "ila_tx[151]"
+                                            },
+                                            {
+                                                "name": "ila_tx[150]"
+                                            },
+                                            {
+                                                "name": "ila_tx[149]"
+                                            },
+                                            {
+                                                "name": "ila_tx[148]"
+                                            },
+                                            {
+                                                "name": "ila_tx[147]"
+                                            },
+                                            {
+                                                "name": "ila_tx[146]"
+                                            },
+                                            {
+                                                "name": "ila_tx[145]"
+                                            },
+                                            {
+                                                "name": "ila_tx[144]"
+                                            },
+                                            {
+                                                "name": "ila_tx[143]"
+                                            },
+                                            {
+                                                "name": "ila_tx[142]"
+                                            },
+                                            {
+                                                "name": "ila_tx[141]"
+                                            },
+                                            {
+                                                "name": "ila_tx[140]"
+                                            },
+                                            {
+                                                "name": "ila_tx[139]"
+                                            },
+                                            {
+                                                "name": "ila_tx[138]"
+                                            },
+                                            {
+                                                "name": "ila_tx[137]"
+                                            },
+                                            {
+                                                "name": "ila_tx[136]"
+                                            },
+                                            {
+                                                "name": "ila_tx[135]"
+                                            },
+                                            {
+                                                "name": "ila_tx[134]"
+                                            },
+                                            {
+                                                "name": "ila_tx[133]"
+                                            },
+                                            {
+                                                "name": "ila_tx[132]"
+                                            },
+                                            {
+                                                "name": "ila_tx[131]"
+                                            },
+                                            {
+                                                "name": "ila_tx[130]"
+                                            },
+                                            {
+                                                "name": "ila_tx[129]"
+                                            },
+                                            {
+                                                "name": "ila_tx[128]"
+                                            },
+                                            {
+                                                "name": "ila_tx[127]"
+                                            },
+                                            {
+                                                "name": "ila_tx[126]"
+                                            },
+                                            {
+                                                "name": "ila_tx[125]"
+                                            },
+                                            {
+                                                "name": "ila_tx[124]"
+                                            },
+                                            {
+                                                "name": "ila_tx[123]"
+                                            },
+                                            {
+                                                "name": "ila_tx[122]"
+                                            },
+                                            {
+                                                "name": "ila_tx[121]"
+                                            },
+                                            {
+                                                "name": "ila_tx[120]"
+                                            },
+                                            {
+                                                "name": "ila_tx[119]"
+                                            },
+                                            {
+                                                "name": "ila_tx[118]"
+                                            },
+                                            {
+                                                "name": "ila_tx[117]"
+                                            },
+                                            {
+                                                "name": "ila_tx[116]"
+                                            },
+                                            {
+                                                "name": "ila_tx[115]"
+                                            },
+                                            {
+                                                "name": "ila_tx[114]"
+                                            },
+                                            {
+                                                "name": "ila_tx[113]"
+                                            },
+                                            {
+                                                "name": "ila_tx[112]"
+                                            },
+                                            {
+                                                "name": "ila_tx[111]"
+                                            },
+                                            {
+                                                "name": "ila_tx[110]"
+                                            },
+                                            {
+                                                "name": "ila_tx[109]"
+                                            },
+                                            {
+                                                "name": "ila_tx[108]"
+                                            },
+                                            {
+                                                "name": "ila_tx[107]"
+                                            },
+                                            {
+                                                "name": "ila_tx[106]"
+                                            },
+                                            {
+                                                "name": "ila_tx[105]"
+                                            },
+                                            {
+                                                "name": "ila_tx[104]"
+                                            },
+                                            {
+                                                "name": "ila_tx[103]"
+                                            },
+                                            {
+                                                "name": "ila_tx[102]"
+                                            },
+                                            {
+                                                "name": "ila_tx[101]"
+                                            },
+                                            {
+                                                "name": "ila_tx[100]"
+                                            },
+                                            {
+                                                "name": "ila_tx[99]"
+                                            },
+                                            {
+                                                "name": "ila_tx[98]"
+                                            },
+                                            {
+                                                "name": "ila_tx[97]"
+                                            },
+                                            {
+                                                "name": "ila_tx[96]"
+                                            },
+                                            {
+                                                "name": "ila_tx[95]"
+                                            },
+                                            {
+                                                "name": "ila_tx[94]"
+                                            },
+                                            {
+                                                "name": "ila_tx[93]"
+                                            },
+                                            {
+                                                "name": "ila_tx[92]"
+                                            },
+                                            {
+                                                "name": "ila_tx[91]"
+                                            },
+                                            {
+                                                "name": "ila_tx[90]"
+                                            },
+                                            {
+                                                "name": "ila_tx[89]"
+                                            },
+                                            {
+                                                "name": "ila_tx[88]"
+                                            },
+                                            {
+                                                "name": "ila_tx[87]"
+                                            },
+                                            {
+                                                "name": "ila_tx[86]"
+                                            },
+                                            {
+                                                "name": "ila_tx[85]"
+                                            },
+                                            {
+                                                "name": "ila_tx[84]"
+                                            },
+                                            {
+                                                "name": "ila_tx[83]"
+                                            },
+                                            {
+                                                "name": "ila_tx[82]"
+                                            },
+                                            {
+                                                "name": "ila_tx[81]"
+                                            },
+                                            {
+                                                "name": "ila_tx[80]"
+                                            },
+                                            {
+                                                "name": "ila_tx[79]"
+                                            },
+                                            {
+                                                "name": "ila_tx[78]"
+                                            },
+                                            {
+                                                "name": "ila_tx[77]"
+                                            },
+                                            {
+                                                "name": "ila_tx[76]"
+                                            },
+                                            {
+                                                "name": "ila_tx[75]"
+                                            },
+                                            {
+                                                "name": "ila_tx[74]"
+                                            },
+                                            {
+                                                "name": "ila_tx[73]"
+                                            },
+                                            {
+                                                "name": "ila_tx[72]"
+                                            },
+                                            {
+                                                "name": "ila_tx[71]"
+                                            },
+                                            {
+                                                "name": "ila_tx[70]"
+                                            },
+                                            {
+                                                "name": "ila_tx[69]"
+                                            },
+                                            {
+                                                "name": "ila_tx[68]"
+                                            },
+                                            {
+                                                "name": "ila_tx[67]"
+                                            },
+                                            {
+                                                "name": "ila_tx[66]"
+                                            },
+                                            {
+                                                "name": "ila_tx[65]"
+                                            },
+                                            {
+                                                "name": "ila_tx[64]"
+                                            },
+                                            {
+                                                "name": "ila_tx[63]"
+                                            },
+                                            {
+                                                "name": "ila_tx[62]"
+                                            },
+                                            {
+                                                "name": "ila_tx[61]"
+                                            },
+                                            {
+                                                "name": "ila_tx[60]"
+                                            },
+                                            {
+                                                "name": "ila_tx[59]"
+                                            },
+                                            {
+                                                "name": "ila_tx[58]"
+                                            },
+                                            {
+                                                "name": "ila_tx[57]"
+                                            },
+                                            {
+                                                "name": "ila_tx[56]"
+                                            },
+                                            {
+                                                "name": "ila_tx[55]"
+                                            },
+                                            {
+                                                "name": "ila_tx[54]"
+                                            },
+                                            {
+                                                "name": "ila_tx[53]"
+                                            },
+                                            {
+                                                "name": "ila_tx[52]"
+                                            },
+                                            {
+                                                "name": "ila_tx[51]"
+                                            },
+                                            {
+                                                "name": "ila_tx[50]"
+                                            },
+                                            {
+                                                "name": "ila_tx[49]"
+                                            },
+                                            {
+                                                "name": "ila_tx[48]"
+                                            },
+                                            {
+                                                "name": "ila_tx[47]"
+                                            },
+                                            {
+                                                "name": "ila_tx[46]"
+                                            },
+                                            {
+                                                "name": "ila_tx[45]"
+                                            },
+                                            {
+                                                "name": "ila_tx[44]"
+                                            },
+                                            {
+                                                "name": "ila_tx[43]"
+                                            },
+                                            {
+                                                "name": "ila_tx[42]"
+                                            },
+                                            {
+                                                "name": "ila_tx[41]"
+                                            },
+                                            {
+                                                "name": "ila_tx[40]"
+                                            },
+                                            {
+                                                "name": "ila_tx[39]"
+                                            },
+                                            {
+                                                "name": "ila_tx[38]"
+                                            },
+                                            {
+                                                "name": "ila_tx[37]"
+                                            },
+                                            {
+                                                "name": "ila_tx[36]"
+                                            },
+                                            {
+                                                "name": "ila_tx[35]"
+                                            },
+                                            {
+                                                "name": "ila_tx[34]"
+                                            },
+                                            {
+                                                "name": "ila_tx[33]"
+                                            },
+                                            {
+                                                "name": "ila_tx[32]"
+                                            },
+                                            {
+                                                "name": "ila_tx[31]"
+                                            },
+                                            {
+                                                "name": "ila_tx[30]"
+                                            },
+                                            {
+                                                "name": "ila_tx[29]"
+                                            },
+                                            {
+                                                "name": "ila_tx[28]"
+                                            },
+                                            {
+                                                "name": "ila_tx[27]"
+                                            },
+                                            {
+                                                "name": "ila_tx[26]"
+                                            },
+                                            {
+                                                "name": "ila_tx[25]"
+                                            },
+                                            {
+                                                "name": "ila_tx[24]"
+                                            },
+                                            {
+                                                "name": "ila_tx[23]"
+                                            },
+                                            {
+                                                "name": "ila_tx[22]"
+                                            },
+                                            {
+                                                "name": "ila_tx[21]"
+                                            },
+                                            {
+                                                "name": "ila_tx[20]"
+                                            },
+                                            {
+                                                "name": "ila_tx[19]"
+                                            },
+                                            {
+                                                "name": "ila_tx[18]"
+                                            },
+                                            {
+                                                "name": "ila_tx[17]"
+                                            },
+                                            {
+                                                "name": "ila_tx[16]"
+                                            },
+                                            {
+                                                "name": "ila_tx[15]"
+                                            },
+                                            {
+                                                "name": "ila_tx[14]"
+                                            },
+                                            {
+                                                "name": "ila_tx[13]"
+                                            },
+                                            {
+                                                "name": "ila_tx[12]"
+                                            },
+                                            {
+                                                "name": "ila_tx[11]"
+                                            },
+                                            {
+                                                "name": "ila_tx[10]"
+                                            },
+                                            {
+                                                "name": "ila_tx[9]"
+                                            },
+                                            {
+                                                "name": "ila_tx[8]"
+                                            },
+                                            {
+                                                "name": "ila_tx[7]"
+                                            },
+                                            {
+                                                "name": "ila_tx[6]"
+                                            },
+                                            {
+                                                "name": "ila_tx[5]"
+                                            },
+                                            {
+                                                "name": "ila_tx[4]"
+                                            },
+                                            {
+                                                "name": "ila_tx[3]"
+                                            },
+                                            {
+                                                "name": "ila_tx[2]"
+                                            },
+                                            {
+                                                "name": "ila_tx[1]"
+                                            },
+                                            {
+                                                "name": "ila_tx[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

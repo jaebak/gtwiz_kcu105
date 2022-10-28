@@ -53,8 +53,8 @@
 # Location constraints for differential reference clock buffers
 # Note: the IP core-level XDC constrains the transceiver channel data pin locations
 # ----------------------------------------------------------------------------------------------------------------------
-set_property package_pin M5 [get_ports mgtrefclk1_x0y3_n]
-set_property package_pin M6 [get_ports mgtrefclk1_x0y3_p]
+set_property package_pin K6 [get_ports mgtrefclk1_x0y3_p]
+set_property package_pin K5 [get_ports mgtrefclk1_x0y3_n]
 
 # Location constraints for other example design top-level ports
 # Note: uncomment the following set_property constraints and replace "<>" with appropriate pin locations for your board
@@ -77,7 +77,7 @@ set_property package_pin M6 [get_ports mgtrefclk1_x0y3_p]
 # Clock constraints for clocks provided as inputs to the core
 # Note: the IP core-level XDC constrains clocks produced by the core, which drive user clocks via helper blocks
 # ----------------------------------------------------------------------------------------------------------------------
-create_clock -name clk_mgtrefclk1_x0y3_p -period 8.75 [get_ports mgtrefclk1_x0y3_p]
+create_clock -name clk_mgtrefclk1_x0y3_p -period 10 [get_ports mgtrefclk1_x0y3_p]
 
 # False path constraints
 # ----------------------------------------------------------------------------------------------------------------------
@@ -99,10 +99,10 @@ set_property -dict { PACKAGE_PIN F10  IOSTANDARD LVDS} [get_ports hb_gtwiz_reset
 create_clock -name CLK_125_group  -period 8    [get_ports hb_gtwiz_reset_clk_freerun_in_p]
 set_clock_groups -group [get_clocks CLK_125_group -include_generated_clocks] -asynchronous
 
-set_property -dict {package_pin V2} [get_ports ch0_gthrxp_in]
-set_property -dict {package_pin V1} [get_ports ch0_gthrxn_in]
-set_property -dict {package_pin W4} [get_ports ch0_gthtxp_out]
-set_property -dict {package_pin W3} [get_ports ch0_gthtxn_out]
+set_property -dict {package_pin F6} [get_ports ch0_gthtxp_out]
+set_property -dict {package_pin F5} [get_ports ch0_gthtxn_out]
+set_property -dict {package_pin E4} [get_ports ch0_gthrxp_in]
+set_property -dict {package_pin E3} [get_ports ch0_gthrxn_in]
 
 # GPIO_SW_N
 set_property -dict { PACKAGE_PIN AD10  IOSTANDARD LVCMOS18} [get_ports hb_gtwiz_reset_all_in]

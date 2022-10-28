@@ -381,21 +381,49 @@ module gth_unit_example_top (
 
   assign cm0_gtrefclk00_int = mgtrefclk1_x0y3_int;
 
+
+  // clock is 10.28565 GHz / 40 bits = 257.14125 MHz
+  wire[127:0] tx_to_rx_write;
+  wire[127:0] tx_to_rx_read;
+  assign tx_to_rx_write[127:81] = 0;
+  assign tx_to_rx_write[80:49] = hb0_gtwiz_userdata_tx_int;
+  assign tx_to_rx_write[48:33] = ch0_txctrl0_int;
+  assign tx_to_rx_write[32:17] = ch0_txctrl1_int;
+  assign tx_to_rx_write[16:1]  = ch0_txctrl2_int;
+  assign tx_to_rx_write[0]     = hb0_gtwiz_userclk_tx_active_int;
+  cdc_fifo cdc_fifo_tx_to_rx (
+    // Write
+    .full (), // output
+    .din (tx_to_rx_write), // input[127:0]
+    .wr_en (hb0_gtwiz_userclk_rx_active_int), // input
+    // Read
+    .empty (), // output
+    .dout (tx_to_rx_read), //output[127:0]
+    .rd_en (hb0_gtwiz_userclk_rx_active_int), // input
+    // General
+    .srst (hb_gtwiz_reset_all_int), // input
+    .wr_clk (hb0_gtwiz_userclk_tx_usrclk2_int), // input
+    .rd_clk (hb0_gtwiz_userclk_rx_usrclk2_int), // input
+    .wr_rst_busy (), // output
+    .rd_rst_busy () // output
+  );
+
   wire[255:0] ila_rx;
+  assign ila_rx[198:167] = hb0_gtwiz_userdata_tx_int;
   assign ila_rx[166] = link_status_out;
   assign ila_rx[165] = prbs_match_int[0];
   assign ila_rx[164] = ~hb0_gtwiz_reset_rx_done_int;
   assign ila_rx[163] = hb_gtwiz_reset_all_int;
-  assign ila_rx[162] = hb0_gtwiz_userclk_tx_active_int;
-  assign ila_rx[161] = hb0_gtwiz_userclk_tx_active_int;
+  assign ila_rx[162] = tx_to_rx_read[0]; //hb0_gtwiz_userclk_tx_active_int;
+  assign ila_rx[161] = tx_to_rx_read[0]; //hb0_gtwiz_userclk_tx_active_int;
   assign ila_rx[160] = hb0_gtwiz_userclk_rx_active_int;
-  assign ila_rx[159:144] = ch0_txctrl2_int;
-  assign ila_rx[143:128] = ch0_txctrl1_int;
-  assign ila_rx[127:112] = ch0_txctrl0_int;
+  assign ila_rx[159:144] = tx_to_rx_read[16:1]; //ch0_txctrl2_int;
+  assign ila_rx[143:128] = tx_to_rx_read[32:17]; //ch0_txctrl1_int;
+  assign ila_rx[127:112] = tx_to_rx_read[48:33]; //ch0_txctrl0_int;
   assign ila_rx[111:96] = ch0_rxctrl2_int;
   assign ila_rx[95:80] = ch0_rxctrl1_int;
   assign ila_rx[79:64] = ch0_rxctrl0_int;
-  assign ila_rx[63:32] = hb0_gtwiz_userdata_tx_int;
+  assign ila_rx[63:32] = tx_to_rx_read[80:49]; //hb0_gtwiz_userdata_tx_int;
   assign ila_rx[31:0] = hb0_gtwiz_userdata_rx_int;
   ila_optics ila_optics_rx (
     .clk (hb0_gtwiz_userclk_rx_usrclk2_int),
